@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="113" started-at="2020-03-19T21:41:56 IST" finished-at="2020-03-19T21:41:56 IST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="113" started-at="2020-03-19T21:41:56 IST" finished-at="2020-03-19T21:41:56 IST">
+      <class name="org.virtual.selenium.newdemo.NewTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:org.virtual.selenium.newdemo.NewTest@6eebc39e]" name="f" duration-ms="9" started-at="2020-03-19T21:41:56 IST" finished-at="2020-03-19T21:41:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- org.virtual.selenium.newdemo.NewTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
