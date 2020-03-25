@@ -1,30 +1,31 @@
 package org.virtual.selenium.newdemo;
+import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class NewTest {
-  @Test
-  public void f()  {
-	 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		ChromeOptions chromeOptions = new ChromeOptions();
-	                chromeOptions.addArguments("--headless");
-		                chromeOptions.addArguments("--no-sandbox");
+public class TecAdminSeleniumTest {
 
-			                WebDriver driver = new ChromeDriver(chromeOptions);
+	        public static void main(String[] args) throws IOException, InterruptedException {
+			                System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+					                ChromeOptions chromeOptions = new ChromeOptions();
+							                chromeOptions.addArguments("--headless");
+									                chromeOptions.addArguments("--no-sandbox");
 
-				                driver.get("https://google.com");
+											                WebDriver driver = new ChromeDriver(chromeOptions);
 
-					                Thread.sleep(1000);
+													                driver.get("https://google.com");
 
-						                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
-								                        System.out.println("Pass");
-										                } else {
-												                        System.out.println("Fail");
-														                }
-							                driver.quit();	
-  }
+															                Thread.sleep(1000);
+
+																	                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+																				                        System.out.println("Pass");
+																							                } else {
+																										                        System.out.println("Fail");
+																													                }
+																			                driver.quit();
+																					        }
 }
+
